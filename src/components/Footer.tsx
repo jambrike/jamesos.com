@@ -8,13 +8,13 @@ export default function Footer() {
         <Socials />
         <section className="mt-8 text-center sm:mt-0 sm:text-left">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()}{" "}
+            &copy; {new Date().getFullYear()} {" "}
             <Link className="link" href="/">
-              tedawf.com
+              jamesos.pages.dev
             </Link>{" "}
             |{" "}
             <Link className="link font-bold" href="/privacy">
-              privacy?
+              privacy
             </Link>
           </p>
         </section>

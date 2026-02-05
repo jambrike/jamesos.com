@@ -1,16 +1,16 @@
 {
   "introduction": {
-    "greeting": "hi ted here. 👋",
-    "description": "Backend by profession, full-stack by passion. I build and self-host the lot.",
-    "chatPrompt": "For Q&A, start a chat with Ted Support",
+    "greeting": "Hello, Monsieur/Madame 👋",
+    "description": "17 year old from Ireland. Aspiring software and mechatronics engineer. Active gym goer and such. I am an extremely overworked Software Engineer, always looking for the next challenge.",
+    "chatPrompt": "For Q&A, start a chat with Friendly Tech Support",
     "escalation": {
-      "text": "For any escalations, please find my",
-      "linkText": "Ted Lead",
-      "suffix": "instead."
+      "text": "If you need anything urgent, contact me directly on",
+      "linkText": "Instagram",
+      "suffix": ". I'll get back to you as soon as possible!"
     }
   },
   "escalationLink": {
-    "href": "https://www.instagram.com/gomugomu.cat",
-    "title": "meow"
+    "href": "https://www.instagram.com/james_os08/",
+    "title": "James on Instagram"
   }
 }

@@ -1,63 +1,77 @@
 {
   "career": [
     {
-      "name": "DBS Bank",
-      "href": "https://www.dbs.com.sg",
-      "logo": "/img/dbs.png",
+      "name": "Coakley Moloney Solicitors",
+      "logo": "",
       "positions": [
         {
-          "title": "Associate",
-          "start": "Jul 2025",
+          "title": "Admin Assistant",
+          "start": "Summer 2025",
           "description": [
-            "Building Java, Spring Boot, and Activiti services for current and savings account servicing business processes; raised JUnit coverage above 80% and led a team knowledge base project."
-          ]
-        },
-        {
-          "title": "Graduate Associate (SEED Programme)",
-          "start": "Jul 2023",
-          "end": "Jun 2025",
-          "description": [
-            "Built a Python and SQL automation tool to migrate and configure over 1,000 configuration variants of a process-tracking workflow from a vendor platform into an in-house Spring Boot and Activiti application (MariaDB), reducing per-configuration setup from 1-2 hours to under 5 minutes.",
-            "Developed backend services in Java, Spring Boot, and Activiti and collaborated across teams on end-to-end delivery."
+            "Filed documents and logged information.",
+            "Boxed and delivered files to clients and storage.",
+            "Organized storage rooms for efficiency.",
+            "Seasonal summer job."
           ]
         }
       ]
     },
     {
-      "name": "Singapore Institute of Technology",
-      "href": "https://www.singaporetech.edu.sg",
-      "logo": "/img/sit.png",
+      "name": "UCC (University College Cork)",
+      "logo": "",
       "positions": [
         {
-          "title": "Software Developer (Contract)",
-          "start": "Apr 2023",
-          "end": "Jun 2023",
+          "title": "Maths Tutor",
+          "start": "2025",
           "description": [
-            "Built NFTVue, a NFT gallery website that allows students to connect their crypto wallets to view and verify their school event-issued NFTs",
-            "Worked on DemoConstruct, a full-stack web application (React + Python) that uses Meshroom to reconstruct 3D models from captured images"
-          ],
-          "links": [
-            {
-              "name": "NFTVue",
-              "href": "https://nftvue.vercel.app",
-              "icon": "globe"
-            }
+            "Completed a week-long course in key teaching skills.",
+            "Honourable mentions in Olympiads.",
+            "Tutored local Junior Cert students in mathematics."
           ]
         }
       ]
     },
     {
-      "name": "DBS Bank",
-      "href": "https://www.dbs.com.sg",
-      "logo": "/img/dbs.png",
+      "name": "Workvivo (Zoom)",
+      "logo": "",
       "positions": [
         {
-          "title": "Software Developer (Intern)",
-          "start": "May 2022",
-          "end": "Dec 2022",
+          "title": "Work Experience Student",
+          "start": "Jan 2025",
           "description": [
-            "Worked on the backend for the digital exchange and asset custody application using Spring Boot and Java",
-            "Built an admin dashboard web application for a DBS Metaverse event using Spring Security and Angular"
+            "Experienced web development at scale.",
+            "Assisted with market research for social media companies."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dunnes Stores",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Retail Assistant",
+          "description": [
+            "Stacked shelves and display cases.",
+            "Moved inventory from the stock room."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cork Penny Dinners",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Volunteer",
+          "description": [
+            "Volunteered for a week.",
+            "Cleaned and prepared meals for those in need."
+          ]
+        }
+      ]
+    }
+  ]
           ]
         }
       ]

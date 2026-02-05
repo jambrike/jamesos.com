@@ -1,11 +1,10 @@
 {
-  "name": "Ted Thoughts.",
-  "short_name": "tedawf.com",
+  "name": "James O'Sullivan Portfolio",
+  "short_name": "JamesOS",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
-  "description": "My personal site to showcase my developer work and opinions.",
+  "background_color": "#111111",
+  "theme_color": "#111111",
   "icons": [
     {
       "src": "/icon-192.png",
@@ -16,12 +15,6 @@
       "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png",
-      "purpose": "any maskable"
     }
   ]
 }

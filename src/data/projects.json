@@ -1,63 +1,32 @@
 {
   "projects": [
     {
-      "name": "TT4D",
-      "description": "Generate winning combinations, view past results, and analyze lottery trends all in one place",
-      "image": "/img/tt4d.png",
+      "name": "Edith Glasses",
+      "description": "Bone conduction glasses merging hearing aids and wireless audio. Used the PCB from old earbuds, 3D printed a custom casing, and integrated everything for a unique assistive device.",
+      "image": "/img/edith-glasses.png",
       "tags": [
-        "Python",
-        "FastAPI",
-        "Docker",
-        "Fly.io",
-        "NextJS",
-        "PostgreSQL",
-        "TailwindCSS",
-        "BS4"
+        "3D Printing",
+        "PCB",
+        "Arduino",
+        "CAD",
+        "Hardware"
       ],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://huatnumbers.com",
-          "icon": "globe"
-        },
-        {
-          "name": "Source",
-          "href": "https://github.com/tedawf/tt4d",
-          "icon": "github"
-        },
-        {
-          "name": "Source (UI)",
-          "href": "https://github.com/tedawf/tt4d-web",
-          "icon": "github"
-        }
-      ]
+      "links": []
     },
     {
-      "name": "Tradingview Telegram Alerts",
-      "description": "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
-      "image": "/img/tv-tele-alerts.png",
+      "name": "Red-light Green-light",
+      "description": "A real-life version of the Squid Game challenge. Adapted a C++ vision training model to run on an ESP32, tracking movement and triggering a homemade laser tag vest if you moved during 'red light'. Built in a 32-hour hackathon.",
+      "image": "/img/redlight-greenlight.png",
       "tags": [
-        "Python",
-        "FastAPI",
-        "Docker",
-        "Fly.io",
-        "Selenium",
-        "Telegram Bot API"
+        "C++",
+        "ESP32",
+        "Computer Vision",
+        "Laser Tag",
+        "Hackathon"
       ],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/tedawf/tradingview-telegram-alerts",
-          "icon": "github"
-        }
-      ]
-    },
-    {
-      "name": "NFTVue",
-      "description": "Non-Fungible Tokens (NFTs) Gallery Viewer website that allows users to connect their crypto wallets to view and verify their tokens",
-      "href": "https://nftvue.vercel.app",
-      "image": "/img/nftvue.png",
-      "tags": [
+      "links": []
+    }
+  ]
         "NextJS",
         "TailwindCSS",
         "MetaMask",

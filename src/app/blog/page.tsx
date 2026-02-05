@@ -12,12 +12,9 @@ async function BlogPosts() {
 
 export default function BlogPage() {
   return (
-    <article className="mt-8 flex flex-col gap-8 pb-16">
-      <h1 className="title">my blog.</h1>
-
-      <Suspense fallback={<PostsSkeleton rows={6} showControls />}>
-        <BlogPosts />
-      </Suspense>
-    </article>
+    <main className="max-w-2xl mx-auto py-12 px-4">
+      <h1 className="text-3xl font-bold mb-6">Not Found</h1>
+      <p className="mb-4">This page does not exist.</p>
+    </main>
   );
 }

@@ -3,19 +3,19 @@
     {
       "path": "/",
       "name": "home",
-      "description": "Portfolio overview, recent projects, and blog highlights",
+      "description": "Portfolio overview, recent projects, and certificates",
       "showInNav": true
     },
     {
       "path": "/projects",
       "name": "projects",
-      "description": "Portfolio projects showcase",
+      "description": "Personal and hackathon projects showcase",
       "showInNav": true
     },
     {
-      "path": "/blog",
-      "name": "blog",
-      "description": "Blog posts and project updates",
+      "path": "/mathematics",
+      "name": "certificates",
+      "description": "Mathematics certificates and achievements",
       "showInNav": true
     },
     {
@@ -29,19 +29,14 @@
       "name": "privacy",
       "description": "Privacy policy",
       "showInNav": false
-    },
-    {
-      "path": "/resume.pdf",
-      "name": "resume",
-      "description": "Ted's resume CV in pdf format",
-      "showInNav": false
     }
+    
   ],
   "externalLinks": [
     {
-      "path": "https://www.instagram.com/gomugomu.cat",
+      "path": "https://www.instagram.com/james_os08/",
       "name": "instagram",
-      "description": "Ted Lead for escalations (joke reference to cat's account)",
+      "description": "Contact James for escalations or urgent queries.",
       "isExternal": true
     }
   ]

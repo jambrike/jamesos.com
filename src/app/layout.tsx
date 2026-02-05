@@ -18,8 +18,8 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Ted Thoughts.",
-  description: "My personal site to showcase my developer work and opinions.",
+  title: "James O'Sullivan | Portfolio",
+  description: "Personal site of James O'Sullivan – aspiring software and mechatronics engineer. Projects, certificates, and more.",
   icons: {
     icon: [
       { url: "/favicon.ico" },

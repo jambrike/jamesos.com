@@ -6,40 +6,43 @@ interface ChatPromptsProps {
 }
 
 const allPrompts = [
-  "Tell me about Ted's experience",
-  "What projects has Ted worked on?",
-  "What technologies does Ted use?",
-  "What is Ted's current role?",
-  "Tell me about Ted's skills",
-  "What companies has Ted worked at?",
+  "Tell me about James's experience",
+  "What projects has James built?",
+  "What technologies does James use?",
+  "What is James's current role?",
+  "Tell me about James's skills",
+  "Where has James worked or volunteered?",
 
   // Portfolio & career
-  "What is Ted currently working on?",
-  "What kind of developer is Ted?",
-  "What problems does Ted like solving?",
-  "What areas is Ted strongest in?",
-  "What is Ted focusing on learning now?",
+  "What is James currently working on?",
+  "What kind of engineer is James?",
+  "What problems does James like solving?",
+  "What areas is James strongest in?",
+  "What is James focusing on learning now?",
 
-  // Projects & blog
-  "Which project best represents Ted's work?",
-  "What was the motivation behind Ted's projects?",
-  "What technical challenges has Ted written about?",
-  "What tools or frameworks does Ted frequently mention?",
-  "What has Ted built outside of work?",
+  // Projects & certificates
+  "Which project best represents James's work?",
+  "What was the motivation behind James's projects?",
+  "What technical challenges has James overcome?",
+  "What tools or frameworks does James frequently use?",
+  "What has James built outside of school?",
 
   // Engineering approach
-  "How does Ted approach system design?",
-  "What does Ted care about in clean architecture?",
-  "How does Ted balance speed vs correctness?",
-  "What engineering principles does Ted follow?",
-  "What tradeoffs does Ted often discuss?",
+  "How does James approach system design?",
+  "How does James balance speed vs correctness?",
+  "What engineering principles does James follow?",
+  "What tradeoffs does James often discuss?",
 
   // Practical / conversational
   "What can you help me with?",
-  "Where should I start if I want to explore Ted's work?",
-  "What should I read to understand Ted's thinking?",
-  "Is Ted more backend or frontend focused?",
-  "How can I contact Ted?"
+  "Where should I start if I want to explore James's work?",
+  "What should I read to understand James's thinking?",
+  "Is James more backend or frontend focused?",
+  "How can I contact James?",
+  "What certificates does James have?",
+  "What are James's top skills?",
+  "What programming languages does James know?",
+  "What is James's experience with React, C++, or Arduino?"
 ];
 
 function getRandomPrompts(prompts: string[], count: number): string[] {

@@ -1,42 +1,29 @@
-import { createStreamDataTransformer, type Message } from "ai";
+import { type Message } from "ai";
 
 export const runtime = "edge";
 
 export async function POST(req: Request) {
   try {
-    const {
-      messages,
-      chat_id: chatIdFromBody,
-    }: { messages: Message[]; chat_id?: string } = await req.json();
-
-    const chatIdFromHeader = req.headers.get("x-chat-id") || undefined;
-    const chatId = chatIdFromHeader || chatIdFromBody;
-
-    const fastApiUrl = process.env.TACOS_API_URL || "http://localhost:8000";
-    const apiKey = process.env.TACOS_API_KEY || "";
-
-    if (!fastApiUrl || !apiKey) {
-      throw new Error("Backend URL or API Key is not configured.");
+    const { messages }: { messages: Message[] } = await req.json();
+    const apiKey = process.env.OPENROUTER_API_KEY;
+    const model = process.env.OPENROUTER_MODEL || "openrouter/auto";
+    if (!apiKey) {
+      throw new Error("OpenRouter API Key is not configured.");
     }
 
-    const backendHeaders: HeadersInit = {
-      "Content-Type": "application/json",
-      "X-TACOS-Key": apiKey,
-    };
-
-    if (chatId) {
-      backendHeaders["X-Chat-Id"] = chatId;
-    }
-
-    const backendBody = JSON.stringify({
+    const openRouterBody = JSON.stringify({
+      model,
       messages,
-      ...(chatId ? { chat_id: chatId } : {}),
+      stream: true
     });
 
-    const response = await fetch(`${fastApiUrl}/prompt`, {
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
-      headers: backendHeaders,
-      body: backendBody,
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`,
+      },
+      body: openRouterBody,
     });
 
     if (!response.ok) {
@@ -44,35 +31,19 @@ export async function POST(req: Request) {
       return new Response(errorBody, {
         status: response.status,
         headers: {
-          "Content-Type":
-            response.headers.get("content-type") || "text/plain; charset=utf-8",
+          "Content-Type": response.headers.get("content-type") || "text/plain; charset=utf-8",
         },
       });
     }
 
     if (!response.body) {
-      throw new Error("The response from the backend is empty.");
+      throw new Error("The response from OpenRouter is empty.");
     }
 
-    // note to self:
-    // when self-hosting behind nginx, make sure to disable buffering -> proxy_buffering off;
-    // otherwise nginx will swallow streaming chunks and only flush at the end.
-
-    // 1. Get the raw byte stream
-    const rawStream = response.body;
-
-    // 2. Pipe the raw stream through the Vercel AI SDK's data transformer.
-    // This handles converting the raw text chunks into the SDK's data format.
-    const stream = rawStream.pipeThrough(createStreamDataTransformer());
-
-    const responseChatId = response.headers.get("X-Chat-Id");
-
-    // 3. Return a standard 'Response' object with the transformed stream.
-    return new Response(stream, {
+    return new Response(response.body, {
       headers: {
         "Content-Type": "text/plain; charset=utf-8",
         "Cache-Control": "no-cache, no-transform",
-        ...(responseChatId ? { "X-Chat-Id": responseChatId } : {}),
       },
     });
   } catch (error) {
